@@ -6,8 +6,9 @@ class SV_SharedIPDateRange_Listener
     {
         switch ($class)
         {
-            case 'XenForo_Model_User':
+            case 'XenForo_ControllerPublic_Member':
                 $extend[] = 'SV_SharedIPDateRange_XenForo_ControllerPublic_Member';
+                break;
         }
     }
 }
